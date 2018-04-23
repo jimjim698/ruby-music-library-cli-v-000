@@ -26,11 +26,11 @@ class MusicLibraryController
     puts "What would you like to do?"
 
     input = gets.strip
-  end
-  if input =='list songs'
-    Song.all.sort {|a,b| a.name<=>b.name}.each_with_index do |song, index|
-      puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-    end
+    case input 
+  
+  when 'list songs'
+    list_songs
+    
   end
 end
 
