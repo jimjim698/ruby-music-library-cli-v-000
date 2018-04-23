@@ -35,7 +35,7 @@ when 'list genres'
   list_genres
 when "play song"
   play_song
-when 'list artists'
+when 'list artist'
   list_songs_by_artist
 when 'list genre'
   list_songs_by_genre
