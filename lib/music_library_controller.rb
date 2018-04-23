@@ -27,6 +27,8 @@ class MusicLibraryController
 
     input = gets.strip
   end
+  if input =='list songs'
+    list_songs
 end
 
 
