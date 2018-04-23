@@ -74,6 +74,7 @@ def play_song
   song_list = []
   puts "Which song number would you like to play?"
   input = gets.strip.to_i + 1
+  if (1..Song.all.length).include(input)
   song_list = Song.all.sort {|a,b| a.name<=>b.name}
   song = song_list[input]
   puts "Playing #{song.name} by #{song.artist.name}" if song
